@@ -1,0 +1,41 @@
+appBar: AppBar(
+          leading: PopupMenuButton(
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                child: Text("Profile"),
+                value: 1,
+              ),
+              PopupMenuItem(
+                child: Text("Account"),
+                value: 1,
+              ),
+              PopupMenuItem(
+                child: Text("Settings"),
+                value: 1,
+              ),
+              PopupMenuItem(
+                child: Text("About Company"),
+                value: 1,
+              ),
+              PopupMenuItem(
+                child: Text("Go Premium"),
+                value: 1,
+              ),
+            ],
+            child: Icon(
+              Icons.menu,
+              color: Color.fromARGB(255, 67, 49, 49),
+            ),
+          ),
+          
+          title: Text(
+            'PARKING SYSTEM',
+            style: TextStyle(
+              fontSize: 20,
+              color: Color.fromARGB(255, 67, 49, 49),
+              //fontWeight: bold,
+            ),
+          ),
+          backgroundColor: Color.fromARGB(255, 228, 252, 173),
+          centerTitle: true,
+        ),
